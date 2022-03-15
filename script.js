@@ -1,3 +1,6 @@
+//global constant
+const clueHoldTime = 1000; // how long to hold each clue light/sound
+
 //Global Variables
 var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
 var progress = 0;
@@ -47,9 +50,9 @@ function playTone(btn, len){
   g.gain.setTargetAtTime(volume,context.currentTime +0.05, 0.025);
   context.resume();
   tonePlaying = true;
-  setTimeOut(function(){
-             stopTone();
-             }, len)
+  setTimeout(function(){
+             stopTone()
+             }, len);
 }
 function startTone(btn){
   if(!tonePlaying){
@@ -69,6 +72,12 @@ function lightButton(btn){
   document.getElementById("button" + btn).classList.add("lit");
 }
 function clearButton(btn){
-  document.getElement
+  document.getElementById("button"+btn).classList.remove("lit");
 }
 
+function playingSingleClue(btn){
+  if(gamePlaying){
+    lightButton(btn);
+    
+  }
+}
