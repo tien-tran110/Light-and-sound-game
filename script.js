@@ -120,10 +120,23 @@ function guess(btn) {
     //Guess was correct
     if(guessCounter == progress){
       if(guessCounter == pattern.length - 1){
+        //game over, win
         winGame();
       }
-      progress++;
-      
+      else{
+        //pattern correct, play next clue
+        progress++;
+        playClueSequence();
+      }
     }
+    else{
+      //turn is not over yet, check the next response
+      guessCounter++;
+    }
+  }
+  else{
+    //Guess is incorrect
+    //game over
+    loseGame();
   }
 }
