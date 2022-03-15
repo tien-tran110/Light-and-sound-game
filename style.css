@@ -12,11 +12,21 @@ html {
 
 /* adjust typography defaults */
 body {
-  margin: 1rem;
-  font-family: sans-serif;
+  margin: 2rem;
+  font-family: monospace, serif;
   line-height: 1.5;
+  background-color: slategrey;
+  color: white;
+}
+h1{
+  font-family: georgia, arial, sans-serif;
 }
 
+button{
+  padding: 10px;
+  border-radius: 10px;
+  
+}
 /* images and videos max out at full width */
 img,
 video {
