@@ -116,4 +116,14 @@ function guess(btn) {
   }
 
   //game logic
+  if(pattern[guessCounter] == btn){
+    //Guess was correct
+    if(guessCounter == progress){
+      if(guessCounter == pattern.length - 1){
+        winGame();
+      }
+      progress++;
+      
+    }
+  }
 }
