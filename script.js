@@ -65,3 +65,10 @@ function stopTone(){
   tonePlaying = false;
 }
 
+function lightButton(btn){
+  document.getElementById("button" + btn).classList.add("lit");
+}
+function clearButton(btn){
+  document.getElement
+}
+
