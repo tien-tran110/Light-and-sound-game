@@ -47,7 +47,7 @@ button{
   background: blue;
 }
 #button3{
-  background: pink;
+  background: orange;
 }
 #button3:active, #button3.lit{
   background: red;
@@ -63,6 +63,12 @@ button{
 }
 #button5:active, #button5.lit{
   background: darkblue;
+}
+#button6{
+  background: pink;
+}
+#button6:active, #button5.lit{
+  background: violet;
 }
 /* images and videos max out at full width */
 img,

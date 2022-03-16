@@ -4,10 +4,10 @@ const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before playing sequence
 
 //Global Variables
-var pattern = new Array(8);
+var pattern = new Array(10);
 function setPattern(pattern){
   for(let i = 0; i< pattern.length; i++){
-    pattern[i] = randomInt(1, 4);
+    pattern[i] = randomInt(1, 6);
   }
 }
 var progress = 0;
@@ -55,9 +55,11 @@ o.start(0);
 //Sound Synthesis Function
 const freqMap = {
   1: 261.6,
-  2: 329.6,
-  3: 329,
-  4: 466.2,
+  2: 293.7,
+  3: 329.6,
+  4: 349.2,
+  5: 392,
+  6: 440
 };
 function playTone(btn, len) {
   o.frequency.value = freqMap[btn];
