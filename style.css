@@ -58,6 +58,12 @@ button{
 #button4:active, #button4.lit{
   background: yellow;
 }
+#button5{
+  background: slateblue;
+}
+#button5:active, #button5.lit{
+  background: darkblue;
+}
 /* images and videos max out at full width */
 img,
 video {
