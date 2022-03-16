@@ -4,12 +4,16 @@ const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before playing sequence
 
 //Global Variables
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+var pattern = new ;
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5; //betwwen 0.0 and 1.0
 var guessCounter = 0;
+
+function randomInt(min, max){
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 function startGame() {
   //initialize game variable
