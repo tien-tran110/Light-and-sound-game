@@ -67,7 +67,7 @@ button{
 #button6{
   background: pink;
 }
-#button6:active, #button5.lit{
+#button6:active, #button6.lit{
   background: violet;
 }
 /* images and videos max out at full width */
