@@ -4,10 +4,11 @@
 
 Submitted by: **TIEN TRAN**
 
-Time spent: **3** hours spent in total
+Time spent: **4** hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com...)
-https://glitch.com/edit/#!/light-and-sound-mem-game?path=README.md%3A10%3A43
+Link to project: (https://glitch.com/edit/#!/light-and-sound-mem-game?path=README.md%3A10%3A43)
+
+The Game site: https://light-and-sound-mem-game.glitch.me/
 
 
 ## Required Functionality
@@ -48,7 +49,13 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+
+    w3schools: https://www.w3schools.com/html/html_colors.asp
+
+    stackOverFlow: https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
+
+    https://reeteshghimire.com.np/2020/03/27/play-musical-notes-with-javascript/
+
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 [YOUR ANSWER HERE]
@@ -68,7 +75,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright [TIEN TRAN]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
