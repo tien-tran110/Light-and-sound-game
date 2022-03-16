@@ -1,22 +1,15 @@
 # Light And Sound memory Game
+The game contains different buttons with different colors. The user can start the game by pressing the start button. 
+After pressing the start button, the pattern of sound coressponding to different buttons will be generated. The users need to correctly repeat the pattern in order to win the game.
 
-This is a basic static HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen 🪄 immediately in the preview window. You can upload assets like images or audio in `assets` to the left. The rest is up to you and your imagination.
 
 ## What's in this project?
 
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
+← `README.md`: contains the instruction of the game.
 
-← `index.html`: This is the main HTML page for your site.
+← `index.html`: contains the main HTML components of the sites including buttons, title, headers
 
-← `style.css`: CSS files add styling rules to your content.
+← `style.css`: CSS files add styling rules to the button's, headers', and title's font, size, border, background-color
 
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript.
+← `script.js`: JavaScript file to the interactivity of the game such as the logic to generate the pattern, inform the winner, or message the player .
 
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
-
-## You built this with Glitch!
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
-
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
