@@ -15,7 +15,6 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5; //betwwen 0.0 and 1.0
 var guessCounter = 0;
-var missed = 0;
 
 function randomInt(min, max){
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -129,8 +128,6 @@ function guess(btn) {
   }
 
   //game logic
-  while(missed < 3){
-    
     if(pattern[guessCounter] == btn){
     //Guess was correct
     if(guessCounter == progress){
@@ -152,14 +149,10 @@ function guess(btn) {
   }
     else{
     //Guess is incorrect
-      if(missed < 3){
-        playSingleClue();
-        missed++;
+      for(let missed = 0; missed < 3; missed++){
+        //mm
       }
-      else{
-        //game over
-        loseGame();
-      }
+    //game over
+    loseGame();
     }
-}
 }
