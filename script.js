@@ -15,6 +15,7 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5; //betwwen 0.0 and 1.0
 var guessCounter = 0;
+var missed = 0;
 
 function randomInt(min, max){
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -149,9 +150,11 @@ function guess(btn) {
   }
     else{
     //Guess is incorrect
-      for(let missed = 0; missed < 3; missed++){
-        //mm
-      }
+      /*while(missed < 3){
+        //allows missed 3 times
+        playClueSequence();
+        guess(btn);
+      }*/
     //game over
     loseGame();
     }
