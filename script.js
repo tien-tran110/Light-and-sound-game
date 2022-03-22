@@ -131,13 +131,13 @@ function guess(btn) {
   //game logic
   while(missed < 3){
     
-  }
-  if(pattern[guessCounter] == btn){
+    if(pattern[guessCounter] == btn){
     //Guess was correct
     if(guessCounter == progress){
       if(guessCounter == pattern.length - 1){
         //game over, win
         winGame();
+        return;
       }
       else{
         //pattern correct, play next clue
@@ -150,9 +150,16 @@ function guess(btn) {
       guessCounter++;
     }
   }
-  else{
+    else{
     //Guess is incorrect
-    //game over
-    loseGame();
-  }
+      if(missed < 3){
+        playSingleClue();
+        missed++;
+      }
+      else{
+        //game over
+        loseGame();
+      }
+    }
+}
 }
