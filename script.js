@@ -16,8 +16,7 @@ var tonePlaying = false;
 var volume = 0.5; //betwwen 0.0 and 1.0
 var guessCounter = 0;
 var missed = 0;
-var winningSound = new Audio("https://soundcloud.com/cracked-gamer-982533687/winning-sound-effect?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing")
-var lostSound = new Audio("https://soundcloud.com/paula-alzuri-412648434/371451-cabled-mess-lose-funny-retro-video-game?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing")
+var img = 
 
 
 function randomInt(min, max){
@@ -117,13 +116,11 @@ function playClueSequence() {
 
 function loseGame() {
   stopGame();
-  lostSound.play();
   alert("Game Over. Try again!");
 }
 
 function winGame() {
   stopGame();
-  winningSound.play();
   alert("You are the champion!");
 }
 
