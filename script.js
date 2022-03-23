@@ -150,11 +150,12 @@ function guess(btn) {
   }
     else{
     //Guess is incorrect
-      /*while(missed < 3){
+      if(missed < 3){
         //allows missed 3 times
         playClueSequence();
         guess(btn);
-      }*/
+        missed++;
+      }
     //game over
     loseGame();
     }
