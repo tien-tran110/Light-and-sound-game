@@ -134,6 +134,7 @@ function guess(btn) {
     if(guessCounter == progress){
       if(guessCounter == pattern.length - 1){
         //game over, win
+        missed = 0;
         winGame();
       }
       else{
@@ -149,19 +150,7 @@ function guess(btn) {
   }
     else{
     //Guess is incorrect
-      if(missed == 3){
-        //allows missed 3 times
-        //game over
-        loseGame();
-        
-      }else{
-        //repeat the pattern
-        playClueSequence();
-        //check for response
-        guess(btn);
-        
-      }
-      missed += 1; //increment fail attempt
+      
     
     }
 }
