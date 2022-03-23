@@ -153,10 +153,13 @@ function guess(btn) {
       if(missed < 3){
         //allows missed 3 times
         playClueSequence();
-        guess(btn);
         missed++;
+        guess(btn);
+        
+      }else{
+        //game over
+        loseGame();
       }
-    //game over
-    loseGame();
+    
     }
 }
