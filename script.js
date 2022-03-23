@@ -16,6 +16,9 @@ var tonePlaying = false;
 var volume = 0.5; //betwwen 0.0 and 1.0
 var guessCounter = 0;
 var missed = 0;
+var winningSound = new Audio("https://drive.google.com/file/d/1WBM0MLtJDhEBJkbYKDXRmZ_cLsBUhvGH/view?usp=sharing")
+var lostSound = newAudio("https://drive.google.com/file/d/1uz5bfD-VkbYyEyqvOCsQ9cgxnAPfN-HK/view?usp=sharing")
+
 
 function randomInt(min, max){
   return Math.floor(Math.random() * (max - min + 1) + min);
