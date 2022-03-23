@@ -70,6 +70,14 @@ button{
 #button6:active, #button6.lit{
   background: violet;
 }
+  
+.visible {
+display:block;
+position:absolute;
+top:0;left:0;
+}
+  
+
 /* images and videos max out at full width */
 img,
 video {

@@ -122,7 +122,7 @@ function loseGame() {
 function winGame() {
   stopGame();
   alert("You are the champion!");
-  document.getElementById("confetti").classList.remove("hidden");
+  document.getElementById("confetti").className;
 }
 
 function guess(btn) {
