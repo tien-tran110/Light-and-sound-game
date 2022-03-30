@@ -5,11 +5,6 @@ const nextClueWaitTime = 1000; //how long to wait before playing sequence
 
 //Global Variables
 var pattern = new Array(2);
-function setPattern(pattern){
-  for(let i = 0; i< pattern.length; i++){
-    pattern[i] = randomInt(1, 6);
-  }
-}
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -17,7 +12,11 @@ var volume = 0.5; //betwwen 0.0 and 1.0
 var guessCounter = 0;
 var missed = 0;
 
-
+function setPattern(pattern){
+  for(let i = 0; i< pattern.length; i++){
+    pattern[i] = randomInt(1, 6);
+  }
+}
 
 function randomInt(min, max){
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -32,7 +31,6 @@ function startGame() {
   //swap the start and stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
-  document.getElementById("confetti").classList.add("hidden");
   playClueSequence();
 }
 
@@ -122,7 +120,6 @@ function loseGame() {
 
 function winGame() {
   stopGame();
-  document.getElementById("confetti").classList.remove("hidden");
   alert("You are the champion!");
 }
 
