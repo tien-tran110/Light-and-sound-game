@@ -127,17 +127,7 @@ function playClueSequence() {
     clueHoldTime = clueHoldTime/1.05;
     cluePauseTime = cluePauseTime/1.05;
     
-    timer = setInterval(function(){
-      if(gamePlaying){
-        if(timeRemain >= 0){
-          document.getElementById("timer").innerHTML = "Time remaining: " + timeRemain + " seconds";
-          timeRemain--;
-        }
-        else{
-          loseGame();
-        }
-      }
-    },1000);
+    timer = setInterval(,1000);
     
   }
 }
