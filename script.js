@@ -132,8 +132,12 @@ function playClueSequence() {
   }
 }
 function time(){
-  if(gamePlaying){
+  if(timeRemain >= 0){
+    document.getElementById("timer").innerHTML = "Time remaining: " +timeRemain + " seconds"; 
     
+  }
+  else{
+    loseGame();
   }
 }
 
