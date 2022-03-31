@@ -11,7 +11,7 @@ var tonePlaying = false;
 var volume = 0.5; //betwwen 0.0 and 1.0
 var guessCounter = 0;
 var missed = 0;
-var timeAllowed = 15;
+var timeAllowed = 30;
 var timeRemain = 0;
 var timer;
 
