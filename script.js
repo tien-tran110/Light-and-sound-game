@@ -5,7 +5,7 @@ const nextClueWaitTime = 1000; //how long to wait before playing sequence
 //Global Variables
 var clueHoldTime = 1000; // how long to hold each clue light/sound
 var cluePauseTime = 250; //how long to pause in between clues
-var pattern = new Array(8);
+var pattern = new Array(7);
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -15,7 +15,7 @@ var missed = 0;
 var timeAllowed = 60;
 var timeRemain = 0;
 var timer;
-
+var set = true;
 
 
 function setPattern(pattern){
@@ -124,21 +124,10 @@ function playClueSequence() {
     delay += clueHoldTime;
     delay += cluePauseTime;
     
-    clueHoldTime = clueHoldTime/1.05;
-    cluePauseTime = cluePauseTime/1.05;
+    clueHoldTime -= 100;//decrease hold time after every iteration
     
-      timer = setInterval(function(){
-      if(gamePlaying){
-       if(timeRemain >= 0){
-         document.getElementById("timer").innerHTML = "Time remaining: " +timeRemain + " seconds"; 
-         timeRemain--;
-        }
-       else{
-        loseGame();
-       }
-      }
-      },1000);
- 
+    
+     
   }
 }
 
