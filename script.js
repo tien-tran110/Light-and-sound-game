@@ -1,9 +1,10 @@
 //global constant
-const clueHoldTime = 1000; // how long to hold each clue light/sound
-const cluePauseTime = 250; //how long to pause in between clues
+
 const nextClueWaitTime = 1000; //how long to wait before playing sequence
 
 //Global Variables
+var clueHoldTime = 1000; // how long to hold each clue light/sound
+var cluePauseTime = 250; //how long to pause in between clues
 var pattern = new Array(8);
 var progress = 0;
 var gamePlaying = false;
@@ -30,6 +31,8 @@ function startGame() {
   //initialize game variable
   progress = 0;
   gamePlaying = true;
+  clueHoldTime = 1000; 
+  cluePauseTime = 250;
   
   setPattern(pattern);
 
@@ -110,7 +113,6 @@ function playingSingleClue(btn) {
 function playClueSequence() {
   timeRemain = timeAllowed;
   guessCounter = 0;
-  clearInterval(timer);
   
   let delay = nextClueWaitTime; //set delay to initial wait time
   for (let i = 0; i <= progress; i++) {
@@ -120,6 +122,8 @@ function playClueSequence() {
     delay += clueHoldTime;
     delay += cluePauseTime;
     
+    clueHoldTime = clueHoldTime/1.05;
+    cluePauseTime = cluePauseTime/1.05;
     
     timer = setInterval(function(){
       if(gamePlaying){
