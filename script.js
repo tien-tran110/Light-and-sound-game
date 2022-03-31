@@ -40,7 +40,7 @@ function startGame() {
 function stopGame() {
   //no need to update progress
   gamePlaying = false;
-
+  clearTimeout(timer);
   //switch start and stop buttons
   document.getElementById("stopBtn").classList.add("hidden");
   document.getElementById("startBtn").classList.remove("hidden");
@@ -107,7 +107,7 @@ function playingSingleClue(btn) {
 
 function playClueSequence() {
   guessCounter = 0;
-  clearTimeout(timer)
+  clearTimeout(timer);
   let delay = nextClueWaitTime; //set delay to initial wait time
   for (let i = 0; i <= progress; i++) {
     //for each clue that is revealed so far
@@ -127,7 +127,7 @@ function playClueSequence() {
           loseGame();
         }
       }
-    }, clueHoldTime);
+    },clueHoldTime);
     
   }
 }
@@ -181,4 +181,9 @@ function guess(btn) {
     }
     
     }
+}
+function clearTimeout(){
+  clearTimeout(timer);
+  timeRemain = 0;
+  document.getElementById("timer").innerHTML = "";
 }
