@@ -4,7 +4,7 @@ const cluePauseTime = 250; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before playing sequence
 
 //Global Variables
-var pattern = new Array(2);
+var pattern = new Array(8);
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -40,7 +40,7 @@ function startGame() {
 function stopGame() {
   //no need to update progress
   gamePlaying = false;
-  clearTimeout(timer);
+  clearTimer();
   //switch start and stop buttons
   document.getElementById("stopBtn").classList.add("hidden");
   document.getElementById("startBtn").classList.remove("hidden");
@@ -107,7 +107,7 @@ function playingSingleClue(btn) {
 
 function playClueSequence() {
   guessCounter = 0;
-  clearTimeout(timer);
+  clearInterval(timer);
   let delay = nextClueWaitTime; //set delay to initial wait time
   for (let i = 0; i <= progress; i++) {
     //for each clue that is revealed so far
@@ -117,7 +117,7 @@ function playClueSequence() {
     delay += cluePauseTime;
     
     timeRemain = timeAllowed;
-    timer = setTimeout(function(){
+    timer = setInterval(function(){
       if(gamePlaying){
         if(timeRemain >= 0){
           document.getElementById("timer").innerHTML = "Time remaining: " + timeRemain;
@@ -182,8 +182,8 @@ function guess(btn) {
     
     }
 }
-function clearTimeout(){
-  clearTimeout(timer);
+function clearTimer(){
+  clearInterval(timer);
   timeRemain = 0;
   document.getElementById("timer").innerHTML = "";
 }
