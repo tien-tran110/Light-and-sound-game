@@ -12,10 +12,10 @@ var tonePlaying = false;
 var volume = 0.5; //betwwen 0.0 and 1.0
 var guessCounter = 0;
 var missed = 0;
-var timeAllowed = 60;
+var timeAllowed = 20;
 var timeRemain = 0;
 var timer;
-var set = true;
+var reset = true;
 
 
 function setPattern(pattern){
@@ -32,7 +32,7 @@ function startGame() {
   //initialize game variable
   progress = 0;
   gamePlaying = true;
-  set = true;
+  reset = true;
   clueHoldTime = 1000; 
   cluePauseTime = 250;
   
@@ -125,19 +125,21 @@ function playClueSequence() {
     delay += cluePauseTime;
     
     clueHoldTime -= 100;//decrease hold time after every iteration
-    set = false;
+  }
+  
     timeRemain = timeAllowed;
-    if(set || !gamePlaying){
+    if(reset || !gamePlaying){
       timer = setInterval(countDown, 1000);
     }
-    
-  }
+    reset = false;
+  
 }
 function countDown(){
   document.getElementById("timer").innerHTML = "Time remaining: " + timeRemain +" s";
   timeRemain--;
   if(timeRemain == 0 || !gamePlaying){
-      clearInterval(timer);
+    stopGame();
+    alert("Time's up!");
   }
 }
 
