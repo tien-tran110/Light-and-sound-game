@@ -108,6 +108,7 @@ function playingSingleClue(btn) {
 function playClueSequence() {
   guessCounter = 0;
   clearInterval(timer);
+  
   let delay = nextClueWaitTime; //set delay to initial wait time
   for (let i = 0; i <= progress; i++) {
     //for each clue that is revealed so far
@@ -151,6 +152,7 @@ function guess(btn) {
   //game logic
     if(pattern[guessCounter] == btn){
     //Guess was correct
+      timeRemain = timeAllowed;//reset timer
     if(guessCounter == progress){
       if(guessCounter == pattern.length - 1){
         //game over, win
@@ -184,6 +186,6 @@ function guess(btn) {
 }
 function clearTimer(){
   clearInterval(timer);
-  timeRemain = 0;
+  timeRemain = timeAllowed;
   document.getElementById("timer").innerHTML = "";
 }
