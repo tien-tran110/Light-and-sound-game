@@ -14,7 +14,7 @@ var missed = 0;
 var timeAllowed = 30;
 var timeRemain = 0;
 var timer;
-var check = true;
+
 
 function setPattern(pattern){
   for(let i = 0; i< pattern.length; i++){
@@ -30,7 +30,7 @@ function startGame() {
   //initialize game variable
   progress = 0;
   gamePlaying = true;
-  check = 
+  
   setPattern(pattern);
 
   //swap the start and stop buttons
@@ -84,6 +84,7 @@ function startTone(btn) {
     g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
     context.resume();
     tonePlaying = true;
+    clearTimer();
   }
 }
 function stopTone() {
@@ -129,6 +130,7 @@ function playClueSequence() {
         else{
           loseGame();
         }
+        
       }
     },clueHoldTime);
     
