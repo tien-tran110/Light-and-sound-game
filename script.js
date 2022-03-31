@@ -32,7 +32,7 @@ function startGame() {
   //initialize game variable
   progress = 0;
   gamePlaying = true;
- 
+  set = true;
   clueHoldTime = 1000; 
   cluePauseTime = 250;
   
@@ -127,17 +127,17 @@ function playClueSequence() {
     clueHoldTime -= 100;//decrease hold time after every iteration
     set = false;
     timeRemain = timeAllowed;
-    timer = setInterval(countDown, 1000);
+    if(set || !gamePlaying){
+      timer = setInterval(countDown, 1000);
+    }
     
   }
 }
 function countDown(){
-  document.getElementById("timer").innerHTML = "Time remaining" + timeRemain +" s";
+  document.getElementById("timer").innerHTML = "Time remaining: " + timeRemain +" s";
   timeRemain--;
-  if(timeRemain < 0 || set){
-    if(!set)
-    stopGame();
-    alert("Time's up!");
+  if(timeRemain == 0 || !gamePlaying){
+      clearInterval(timer);
   }
 }
 
