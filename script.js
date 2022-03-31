@@ -15,6 +15,7 @@ var missed = 0;
 var timeAllowed = 60;
 var timeRemain = 0;
 var timer;
+var sound = false;
 
 
 function setPattern(pattern){
@@ -33,6 +34,7 @@ function startGame() {
   gamePlaying = true;
   clueHoldTime = 1000; 
   cluePauseTime = 250;
+  sound = true;
   
   setPattern(pattern);
 
@@ -129,12 +131,12 @@ function playClueSequence() {
       if(gamePlaying){
         if(timeRemain >= 0){
           document.getElementById("timer").innerHTML = "Time remaining: " + timeRemain;
-          timeRemain--;
+          timeRemain --;
         }
         else{
           loseGame();
         }
-        
+  
       }
     },1000);
     
