@@ -14,6 +14,7 @@ var missed = 0;
 var timeAllowed = 30;
 var timeRemain = 0;
 var timer;
+var check = true;
 
 function setPattern(pattern){
   for(let i = 0; i< pattern.length; i++){
@@ -29,6 +30,7 @@ function startGame() {
   //initialize game variable
   progress = 0;
   gamePlaying = true;
+  check = 
   setPattern(pattern);
 
   //swap the start and stop buttons
