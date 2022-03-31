@@ -11,6 +11,9 @@ var tonePlaying = false;
 var volume = 0.5; //betwwen 0.0 and 1.0
 var guessCounter = 0;
 var missed = 0;
+var timeAllowed = 15;
+var timeRemain = 0;
+var timer;
 
 function setPattern(pattern){
   for(let i = 0; i< pattern.length; i++){
@@ -110,6 +113,20 @@ function playClueSequence() {
     setTimeout(playingSingleClue, delay, pattern[i]); //set a timeout to play that clue
     delay += clueHoldTime;
     delay += cluePauseTime;
+    
+    timeRemain = timeAllowed;
+    timer = setTimeout(function(){
+      if(gamePlaying){
+        if(timeRemain >= 0){
+          document.getElementById("timer").innerHTML = "Time remaining: " + timeRemain;
+          timeRemain--;
+        }
+        else{
+          loseGame();
+        }
+      }
+    }, clueHoldTime);
+    
   }
 }
 
