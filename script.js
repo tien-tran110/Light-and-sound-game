@@ -84,7 +84,6 @@ function startTone(btn) {
     g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
     context.resume();
     tonePlaying = true;
-    clearInterval(timer);
   }
 }
 function stopTone() {
@@ -109,6 +108,7 @@ function playingSingleClue(btn) {
 }
 
 function playClueSequence() {
+  timeRemain = timeAllowed;
   guessCounter = 0;
   clearInterval(timer);
   
@@ -121,7 +121,6 @@ function playClueSequence() {
     delay += cluePauseTime;
     
     
-    timeRemain = timeAllowed;
     timer = setInterval(function(){
       if(gamePlaying){
         if(timeRemain >= 0){
