@@ -87,6 +87,7 @@ function startTone(btn) {
 function stopTone() {
   g.gain.setTargetAtTime(0, context.currentTime + 0.05, 0.025);
   tonePlaying = false;
+  
 }
 
 function lightButton(btn) {
@@ -106,6 +107,7 @@ function playingSingleClue(btn) {
 
 function playClueSequence() {
   guessCounter = 0;
+  clearTimeout(timer)
   let delay = nextClueWaitTime; //set delay to initial wait time
   for (let i = 0; i <= progress; i++) {
     //for each clue that is revealed so far
