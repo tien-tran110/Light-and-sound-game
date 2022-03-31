@@ -11,7 +11,7 @@ var tonePlaying = false;
 var volume = 0.5; //betwwen 0.0 and 1.0
 var guessCounter = 0;
 var missed = 0;
-var timeAllowed = 30;
+var timeAllowed = 60;
 var timeRemain = 0;
 var timer;
 
@@ -84,7 +84,7 @@ function startTone(btn) {
     g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
     context.resume();
     tonePlaying = true;
-    clearTimer();
+    clearInterval(timer);
   }
 }
 function stopTone() {
@@ -120,6 +120,7 @@ function playClueSequence() {
     delay += clueHoldTime;
     delay += cluePauseTime;
     
+    
     timeRemain = timeAllowed;
     timer = setInterval(function(){
       if(gamePlaying){
@@ -132,7 +133,7 @@ function playClueSequence() {
         }
         
       }
-    },clueHoldTime);
+    },1000);
     
   }
 }
