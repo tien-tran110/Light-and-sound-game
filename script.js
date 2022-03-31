@@ -127,7 +127,12 @@ function playClueSequence() {
     clueHoldTime = clueHoldTime/1.05;
     cluePauseTime = cluePauseTime/1.05;
     
-    timer = setInterval(,1000);
+    timer = setInterval(time,1000);
+    
+  }
+}
+function time(){
+  if(gamePlaying){
     
   }
 }
