@@ -113,7 +113,7 @@ function playingSingleClue(btn) {
 }
 
 function playClueSequence() {
-  timeRemain = timeAllowed;
+  
   guessCounter = 0;
   
   let delay = nextClueWaitTime; //set delay to initial wait time
@@ -125,9 +125,19 @@ function playClueSequence() {
     delay += cluePauseTime;
     
     clueHoldTime -= 100;//decrease hold time after every iteration
+    set = false;
+    timeRemain = timeAllowed;
+    timer = setInterval(countDown, 1000);
     
-    
-     
+  }
+}
+function countDown(){
+  document.getElementById("timer").innerHTML = "Time remaining" + timeRemain +" s";
+  timeRemain--;
+  if(timeRemain < 0 || set){
+    if(!set)
+    stopGame();
+    alert("Time's up!");
   }
 }
 
