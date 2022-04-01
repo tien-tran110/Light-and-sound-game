@@ -70,9 +70,11 @@ interactivities. I wonder how backend and frontend come in place and colabborate
 Futhermore, I think it would feel really rewarding and accomplished to learn, create, and share the stylish and structured website with the public that is user-friendly. 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-I would create an area on the page to keep track of the player's scores and their highes
-
-
+- I would create an area on the page to keep track of the player's scores and their highest attempt. 
+- I also would like to import a large database resource when it can randomly pick out a popular song tune and then the players can enjoy much more.
+- I should embedded an image showing a warning sign on the button when the players click on the wrong one
+- I would love to generate a confetti gif or background image when the players finished the game sucessfully. 
+- And I can implement functions that the users can control the difficulty of the game (mode: easy, medium, or hard)
 
 ## Interview Recording URL Link
 
