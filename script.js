@@ -4,8 +4,8 @@ const nextClueWaitTime = 1000; //how long to wait before playing sequence
 
 //Global Variables
 var clueHoldTime = 1000; // how long to hold each clue light/sound
-var cluePauseTime = 250; //how long to pause in between clues
-var pattern = new Array(7);
+var cluePauseTime = 333; //how long to pause in between clues
+var pattern = new Array(8);
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -34,7 +34,7 @@ function startGame() {
   gamePlaying = true;
   reset = true;
   clueHoldTime = 1000; 
-  cluePauseTime = 250;
+  cluePauseTime = 333;
   
   setPattern(pattern);
 
