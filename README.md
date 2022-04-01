@@ -4,7 +4,7 @@
 
 Submitted by: **TIEN TRAN**
 
-Time spent: **4** hours spent in total
+Time spent: **7** hours spent in total
 
 Link to project: (https://glitch.com/edit/#!/light-and-sound-mem-game?path=README.md%3A10%3A43)
 
@@ -57,7 +57,10 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 I think the biggest challenge I encountered was setting the timer after each turn. I did some research on how to implement setInterval, clearInterval, setTimerout through w3school and stackoverflow. 
-Then, I tried out the logic on my function. I thought that I would set the timer after the tune is finish playing. 
+Then, I tried out the logic on my function. I thought that I would set the timer after the tune is finish playing. So I initialized a variable that represented the scenario when the sound is not playing.
+However, that logic would give the players more times in between their turns rather than what a timer function supposed to be. So I changed my approach to set the timer when the game start and reset the time
+when it receives a response. 
+
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
 
