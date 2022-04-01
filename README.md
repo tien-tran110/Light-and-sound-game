@@ -65,10 +65,12 @@ I eventually realized that I accidentally put the setInterval in the for loop sa
 I think that to learn a new concept, I need to start with the basic and gradually increase the difficulty. After I know how the function works, it would be much easier to find out where it starts went sideway.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-Seeing how we implemented a website using HTML, CSS, and Javascripts, it gives us a basics functionality on the users' end. Then we added more complex 
+Seeing how we implemented a website using HTML, CSS, and Javascripts, it gives us a basics functionality on the users' end. Then we added logic to those functions yet the website is quite simple and doesn't have much 
+interactivities. I wonder how backend and frontend come in place and colabborate for a much more complex, interactive website. I am curios on how to apply a large database resources that the users can have access on the other end.
+Futhermore, I think it would feel really rewarding and accomplished to learn, create, and share the stylish and structured website with the public that is user-friendly. 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+I would create an area on the page to keep track of the player's scores and their highes
 
 
 
