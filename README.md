@@ -56,8 +56,8 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-
-
+I think the biggest challenge I encountered was setting the timer after each turn. I did some research on how to implement setInterval, clearInterval, setTimerout through w3school and stackoverflow. 
+Then, I tried out the logic on my function. I thought that I would set the timer after the tune is finish playing. 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
 
