@@ -21,7 +21,7 @@ The following **required** functionality is complete:
 * [x] Computer plays back sequence of clues including sound and visual cue for each button
 * [x] Play progresses to the next turn (the user gets the next step in the pattern) after a correct guess. 
 * [x] User wins the game after guessing a complete pattern
-* [ ] User loses the game after an incorrect guess ->(3 mistakes)
+* [x] User loses the game after an incorrect guess ->(3 mistakes)
 
 The following **optional** features are implemented:
 
@@ -33,7 +33,7 @@ The following **optional** features are implemented:
 * [x] Player only loses after 3 mistakes (instead of on the first mistake)
 * [ ] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
-* [ ] User has a limited amount of time to enter their guess on each turn
+* [x] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
 
@@ -50,15 +50,13 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
 
-    w3schools: https://www.w3schools.com/html/html_colors.asp
-
-    stackOverFlow: https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
-
-    https://reeteshghimire.com.np/2020/03/27/play-musical-notes-with-javascript/
+  - w3schools | educative: syntax of Javascripts, HTML, CSS
+    
+  - stackOverFlow: setInterval, setTimeout usage
 
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
