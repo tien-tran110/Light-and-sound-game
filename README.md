@@ -42,10 +42,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](gif1-link-here)
-![](gif2-link-here)
-![](gif3-link-here)
-![](gif4-link-here)
+![](gif1-link-here)https://imgflip.com/gif/6aynmd
+
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
@@ -56,7 +54,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-I think the biggest challenge I encountered was setting the timer after each turn. I did some research on how to implement setInterval, clearInterval, setTimeout through w3school and stackoverflow. 
+- I think the biggest challenge I encountered was setting the timer after each turn. I did some research on how to implement setInterval, clearInterval, setTimeout through w3school and stackoverflow. 
 Then, I tried out the logic on my function. I thought that I would set the timer after the tune is finish playing. So I initialized a variable that represented the scenario when the sound is not playing.
 However, that logic would give the players more times in between their turns rather than what a timer function supposed to be. So I changed my approach to set the timer when the game start and reset the time
 when it receives a response. I struggled to set the intervals and combine the setTimeout at the same time. It seemed to have different intervals running all at once. So I lookup it up how to fix the errors on stackoverflow.
@@ -65,7 +63,7 @@ I eventually realized that I accidentally put the setInterval in the for loop sa
 I think that to learn a new concept, I need to start with the basic and gradually increase the difficulty. After I know how the function works, it would be much easier to find out where it starts went sideway.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-Seeing how we implemented a website using HTML, CSS, and Javascripts, it gives us a basics functionality on the users' end. Then we added logic to those functions yet the website is quite simple and doesn't have much 
+- Seeing how we implemented a website using HTML, CSS, and Javascripts, it gives us a basics functionality on the users' end. Then we added logic to those functions yet the website is quite simple and doesn't have much 
 interactivities. I wonder how backend and frontend come in place and colabborate for a much more complex, interactive website. I am curios on how to apply a large database resources that the users can have access on the other end.
 Futhermore, I think it would feel really rewarding and accomplished to learn, create, and share the stylish and structured website with the public that is user-friendly. 
 
@@ -78,7 +76,8 @@ Futhermore, I think it would feel really rewarding and accomplished to learn, cr
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+My 5-minute Interview Recording
+[https://youtu.be/CfYDfcS3foI]
 
 
 ## License
